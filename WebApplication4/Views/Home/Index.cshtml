@@ -1,0 +1,153 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+
+    // Layout = "~/Views/Shared/_Layout1.cshtml";
+    Layout = null;
+}
+
+<h1>Index</h1>
+<h1>This is my home page</h1>
+
+@ViewData["data1"]
+<br />
+@ViewBag.data2
+<br />
+@TempData["data5"]
+
+
+   
+@* 
+@{
+
+    if (TempData["data5"] != null)
+    {
+        foreach (var item in (List<string>)TempData["data5"])
+        {
+            <h3>@item</h3>
+        }
+
+
+    }
+    else
+    {
+        <h1>No data found</h1>
+    }
+
+
+} *@
+@*
+@ViewBag.data1
+@ViewData["data1"]
+<br />
+
+@ViewBag.data2
+<br />
+@ViewBag.data3
+<br />
+@{
+    foreach (var item in ViewBag.data4)
+    {
+        <h1>@item</h1>
+    }
+} *@
+
+
+
+@* @ViewData["data1"]
+ <br />
+@ViewData["data2"]
+ <br />
+
+ @ViewData["data3"] *@
+@* 
+@{
+    foreach(var  item in (string[])ViewData["data4"])
+    {
+        <h2>@item</h2>
+    }
+
+}
+
+@{
+    foreach(var  item in (List<string>)ViewData["data5"])
+    {
+        <h3>@item</h3>
+    }
+    
+} *@
+
+
+@* @* <h1>Current Data And Time Is  @DateTime.Now</h1>
+<h1>Current Year  Is  @DateTime.Now.Year</h1>
+
+
+
+@{
+
+    var Id = 88;
+    var Name = "Babita";
+    var Age = 21;
+    var Subject = "Beat.EdIT";
+
+
+}
+
+<h1>Id=@Id</h1>
+<h1>Name=@Name</h1>
+<h1>age=@Age</h1>
+<h1>Subject=@Subject</h1>
+@* 
+@{
+    var MyName = "babita";
+    if (MyName.Equals("babita"))
+    {
+        <h3>hey babita</h3>
+    }
+    else
+    {
+        <h3>heii </h3>
+    }
+
+} *@
+
+
+@* @{
+    var name = "babita";
+    switch(name)
+
+    {
+        case "babita":
+            <h1>hey</h1>
+            ;
+            break;
+
+            default:
+            <h1>bye</h1>
+            ;
+            break;
+
+
+
+
+    }
+}
+
+@{
+
+    for(int i=1;i<10;i++)
+    {
+        <h1 style="display:inline">@i</h1>
+
+    }
+}
+
+@{
+    string[] names = { "babita", "dilip", "sonu" };
+    foreach(var item in names)
+    {
+        <h1>@item</h1>
+    }
+
+} *@
